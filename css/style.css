@@ -2,9 +2,9 @@
 
 .ms--header-bg {
     background-color: #2c3e50;
-    height: 80px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navbar-default .navbar-brand,
@@ -43,7 +43,7 @@
 
 #start-bootstrap {
     background-color: #1abc9c;
-    padding-top: 180px;
+    padding-top: 200px;
     padding-bottom: 100px;
     color: white;
 }
@@ -58,14 +58,6 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-/* DOES NOT WORK
-#start-bootstrap .star-icon:before {
-    content: '';
-    height: 10px;
-    width: 100px;
-    background-color: black;
-}
-*/
 
 .ms--star-icon {
     font-size: 30px;
@@ -137,7 +129,7 @@
 }
 
 
-#portfolio .ms--images-top {
+#portfolio .ms--images {
     padding-bottom: 30px;
 }
 
@@ -278,16 +270,27 @@
 #second-to-last .ms--circle-icon a {
     font-size: 20px;
     border: 2px solid white;
-    padding: 10px 16px;
     border-radius: 50px;
     margin: 5px;
     color: white;
 
 }
 
+#second-to-last .ms--circle-icon .ms--size-grp-1 {
+    padding: 10px 12px;
+}
+
+#second-to-last .ms--circle-icon .ms--size-grp-2 {
+    padding: 10px 15px;
+}
+
 #second-to-last .ms--circle-icon a:hover {
     background-color: white;
     color: black;
+}
+
+#second-to-last .ms--block-padding {
+    padding-bottom: 15px;
 }
 
 /* FINISCE SECOND-TO-LAST */
@@ -302,3 +305,23 @@
 }
 
 /* FINISCE FOOTER */
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 767px) {
+    #portfolio .row img {
+        width: 50%;
+    }
+
+    #about .ms--paragraph {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+
+    #contact-me form {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+}
+
+/* MEDIA QUERY */
